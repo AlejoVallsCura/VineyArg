@@ -1,50 +1,102 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
 
+
+/*-----------NAVBAR-----------*/
 .navbar {
+    background-color: #000;
+    font-size: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding: 20px;
 }
-nav{
+
+.user {
+    padding: 0px 40px;
+    color: #fff;
+}
+
+.user a {
+    color: #fff;
+}
+
+.user li {
+    font-size: 30px;
+    padding: 0px 10px;
+    transition: all 1000ms ease;
+}
+
+
+nav {
     flex: 1;
     text-align: right;
+    color: white;
 }
+
 nav ul {
     display: inline-block;
     list-style-type: none;
+    color: white;
+
 }
-nav ul li{
+
+nav ul li {
     display: inline-block;
     margin-right: 20px;
-} 
-h1{
+    transition: all 1000ms ease;
+}
+
+nav ul li a {
     text-decoration: none;
     color: white;
 }
 
-p{
-    color: white;
+nav ul li a:hover {
+    color: #e474b0;
+    border-radius: 10px;
+    transition: all 300ms ease;
 }
 
-a{
+.user li:hover {
+    color: #e474b0;
+}
+
+/*----------- FIN NAVBAR-----------*/
+
+
+
+/*-----------FIN HEADER-----------*/
+.container h1 {
     text-decoration: none;
     color: white;
 }
 
-.container{
+.container p {
+    color: white;
+}
+
+.container a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
     background-image: url(/imagenes/pexels-pixabay-36741.jpg);
-    min-height:670px;
+    min-height: 670px;
     margin: auto;
-    padding-left: 25px ;
-    padding-right: 25px ;
+    padding-left: 25px;
+    padding-right: 25px;
 }
-.row{
+
+.row {
     height: 600px;
     display: flex;
     align-items: left;
@@ -52,20 +104,23 @@ a{
     flex-direction: column;
     margin-left: 3rem;
 }
-.row-2{
+
+.row-2 {
     background: rgba(128, 128, 128, 0.24);
     padding: 10px;
     border-radius: 10px;
-    max-width: 500px ;
+    max-width: 500px;
 
 }
-.col{
+
+.col {
     display: flex;
     justify-content: left;
     align-items: center;
     flex-wrap: wrap;
 }
-.btn{
+
+.btn {
     display: inline-block;
     background: #EC268F;
     color: white;
@@ -73,22 +128,26 @@ a{
     margin: 10px 0;
     border-radius: 10px;
 }
+
 .separador {
     background-color: #EC268F;
     width: 100%;
     height: 10px;
 }
 
-/*---------footer------*/
+/*-----------FIN HEADER-----------*/
 
-.footer{
+
+/*-----------FOOTER----------*/
+
+.footer {
     bottom: 0;
     width: 100%;
     background: #000;
     color: #848282;
-    
 }
-.footer .footer-a{
+
+.footer .footer-a {
     width: 100%;
     max-width: 1200px;
     margin: auto;
@@ -96,28 +155,38 @@ a{
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
     padding: 45px 0px;
-    
+
 }
-.footer-columna-1 h3{
+
+.footer-columna-1 h3 {
     margin-top: 20px;
 }
 
-.footer-columna-2 h3{
+.footer-columna-2 h3 {
     text-align: center;
 }
-.footer-columna-2 ul{
+
+.footer-columna-2 ul {
     list-style: none;
-}
-
-
-.footer-columna-3 h3{
     text-align: center;
 }
-.footer-columna-3 .redes{
+
+.footer-columna-2 ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.footer-columna-3 h3 {
+    text-align: center;
+}
+
+.footer-columna-3 .redes {
     text-align: center;
     padding: 30px;
 }
-.footer-columna-3 .redes a{
+
+.footer-columna-3 .redes a {
     display: inline-block;
     text-decoration: none;
     width: 45px;
@@ -128,6 +197,139 @@ a{
     border-radius: 10px;
     transition: all 300ms ease;
 }
-.footer-columna-3 .redes a:hover{
+
+.footer-columna-3 .redes a:hover {
     background-color: #EC268F;
+}
+
+.footer-b {
+    background-color: #1a1a1a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+/*-----------FIN FOOTER-----------*/
+
+
+/*-----------FORMULARIO-----------*/
+.formulario {
+    display: grid;
+    text-align: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #000000;
+    background-image: linear-gradient(119deg, #000000 58%, #ec268f 100%);
+}
+
+.form-registro {
+    align-items: center;
+    background-color: transparent;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.form-registro h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.control {
+    width: 50%;
+    background-color: #272727;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+    font-size: 18px;
+}
+
+.form-registro p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.form-registro a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.form-registro a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+.form-registro .boton {
+    background-image: linear-gradient(to right, #000000 0%, #434343  51%, #000000  100%);
+    padding: 15px 45px;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: none;
+}
+.form-registro .boton:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.cuenta {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.cuenta a{
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.boton-eleccion {
+    background-image: linear-gradient(to right, #283048 0%, #859398  51%, #283048  100%);
+    padding: 15px 45px;
+    margin: 10px;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: none;
+}
+.boton-eleccion:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+/*-----------FIN FORMULARIO-----------*/
+
+
+
+@media screen and (max-width: 900px) {
+    .formulario {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer .footer-a {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-columna-1 {
+        text-align: center;
+    }
 }
